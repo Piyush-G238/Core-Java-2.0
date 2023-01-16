@@ -1,0 +1,37 @@
+Basically, Java has Eight types of primitive data types:
+
+1. byte
+2. short
+3. int
+4. long
+5. char
+6. float
+7. double
+8. boolean
+
+Data types according to defined groups :
+
+Integers
+1. int : signed 32-bit type. Range : -2147483648 to 2147483647
+2. byte : signed 8-bit typed integer. Range : -127 to 128
+3. short : signed 16-bit type. Range : -32768 to 32767
+4. long : signed 64-bit type.
+
+Note:
+1. java doesn't support unsigned/positive only integers.
+
+Floating-point
+These are also known as real numbers.
+1. float : single precision value, 32-bit type.
+Variables of type float are useful when you need a fractional component, but don’t require a large degree of precision.
+
+2. double : double precision value, 64-bit type.
+When you need to maintain accuracy over many iterative calculations, or are manipulating large-valued numbers, double is the best
+choice.
+
+Characters
+1. char : 16-bit type.
+Java uses unicode to represent characters. Unicode requires 16 bits.
+
+Boolean
+It is a primitive type for logical values. It has two possible values 'true' or 'false'.
