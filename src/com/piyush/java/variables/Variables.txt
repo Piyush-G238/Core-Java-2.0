@@ -1,0 +1,47 @@
+Variables
+
+It is basic unit of storage in java programs.
+All the variables have scope, lifetime and their visibility.
+
+Declaring a variable
+
+data_type identifier [=value];
+
+E.g:
+int i = 3;
+double PI = 3.1416
+
+Dynamic initialization : Java allows variables to be initialized dynamically with the help of expressions defined on right side.
+E.g:
+double c = Math.sqrt(10);
+Here, sqrt() is inbuilt method of Math class.
+
+Scope and lifetime
+A block begins with open brace and ends with close brace. A block defines scope.
+A scope defines what objects are visible to other part of program. A scope also determine lifetime of variable.
+
+There are two categories in the scope:
+1. Global (defined inside the class block)
+2. Local (defined inside the method block)
+
+Note: As a general rule, variables declared inside a scope are not visible, to the code written outside the scope.
+
+Type conversion and casting
+Java automatic conversions:
+when one type of data is assigned to variable of another data type, an automatic conversion will take place on following conditions :
+1. destination type is larger than source type.
+2. both types are compatible.
+
+For e.g :
+byte b = 10;
+int a  = b; (this is valid, as int is larger enough to store data of byte type)
+
+Narrowing conversion:
+To create conversion between two incompatible types, you must use a cast.
+
+E.g :
+int intVar = 10;
+byte byteVar = intVar; (this is invalid as byte is smaller than int)
+
+we can do narrowing conversion as follows:
+byte byteVar = (byte) intVar;
