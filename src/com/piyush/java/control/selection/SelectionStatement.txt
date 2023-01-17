@@ -1,0 +1,68 @@
+Control Statement
+
+A Program can use control statements to control flow of execution on changes to state of a program.
+
+Categories of control statements:
+
+1. selection statement
+2. iteration statement
+3. jump statement
+
+Selection statement
+These statements allow you to control the flow of your program’s execution based upon conditions
+known only during run time.
+
+1. if statement
+Syntax:
+
+In the if statement, if condition is true, expression1 is evaluated, otherwise expression2 is evaluated.
+
+if(condition)
+    expression1;
+else
+    expression2;
+
+2. Nested if
+Syntax:
+
+if(condition){
+    if(condition){
+        ...
+    }
+}
+else{
+
+}
+
+If else-if ladder
+
+Syntax:
+
+if(condition)
+    expression1;
+else if(condition)
+    expression2;
+.
+.
+.
+else
+    expressionN;
+
+Switch statement
+
+Syntax:
+
+switch(expression){
+    case value1:
+        statement sequence
+        break;
+    case value2:
+        statement sequence
+        break;
+    case value3:
+        statement sequence
+        break;
+    default:
+        statement sequence
+}
+
