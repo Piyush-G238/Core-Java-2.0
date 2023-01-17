@@ -1,0 +1,52 @@
+Bitwise Operators
+
+These operators do work on each individual bits of their operands
+1. ~ Bitwise NOT
+2. & Bitwise AND
+3. | Bitwise OR
+4. ^ Bitwise exclusive OR(XOR)
+5. >> Right shift
+6. << Left shift
+7. >>> shift right zero fill
+
+All the integer types are represented by binary numbers of varying bit widths.
+For e.g. byte value of 42 will be 00101010, where each position represents a power of two, starting with 2^0 at the rightmost bit.
+
+Java uses an encoding known as "two's complement", which means that negative numbers are
+represented by inverting (changing 1’s to 0’s and vice versa) all the bits in a
+value, then adding 1 to the result.
+
+E.g: How to represent -42 in binary?
+Binary of 42 : 00101010
+inverting all bits of 42 : 11010101
+Now adding 1 becomes: 11010110
+
+num1    num2    num1|num2   num1&num2   num1^num2   ~num1
+0       0       0           0           0           1
+1       0       1           0           1           0
+0       1       1           0           1           0
+1       1       1           1           0           0
+
+Left shift operator
+This operator will shift all the bits to the left side by specified no. of times
+
+operand << no.of_times
+
+E.g: 6 << 2
+Binary of 6 : 00000110.
+Now applying left shift for one time for 6, It becomes:
+0001100 which is 12
+Now applying again left shift for one for 12, It becomes:
+00011000 which is 24.
+
+Right shift operator
+This operator will shift all the bits to the right side by specified no of times
+
+operand >> no.of_times
+
+E.g: 32 >> 2
+Binary of 32 : 0100000
+Now applying right shift for one time for 32, It becomes:
+0010000 which is 16
+Now applying again left shift for one for 16, It becomes:
+0001000 which is 8.
