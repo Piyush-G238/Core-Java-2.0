@@ -1,0 +1,50 @@
+Operators:
+
+Operators can be divided into following four groups:
+1. arithmetic
+2. bitwise
+3. relational
+4. logical
+
+Arithmetic Operators
+These operators are generally used in mathematical expressions. List of operators under arithmetic operators
+1. + addition
+2. - subtraction
+3. * multiplication
+4. / division
+5. % modulus
+6. ++ increment
+7. -- decrement
+
+Modulus operator:
+modulus operator(%) returns remainder of the division operation. It can be applied to both int and double type.
+e.g:
+10 mod 2 = 0
+10 mod 3 = 1
+
+Increment and Decrement
+increment operator increases its operand value by 1, whereas decrement operator decreases its operand value by 1.
+
+there are two kinds of increments/decrements:
+1. Pre-increment/decrement
+2. Post-increment/decrement
+
+Pre increment: First increment, then use
+E.g:
+int x = 42
+int y = ++x (y is set to 43)
+
+Post increment: First use, then increment
+E.g:
+int x = 42;
+int y = x++ (y is set to 42)
+
+Pre decrement: First decrement, then use
+E.g:
+int x = 42
+int y = --x (y is set to 41)
+
+Post decrement: First use, then decrement
+E.g:
+int x = 42;
+int y = x-- (y is set to 42)
