@@ -1,0 +1,40 @@
+Iteration statements:
+
+These statements create, what we commonly call "loops".
+A loop executes same set of instructions repeatedly, until a termination condition is met.
+
+while loop
+Syntax:
+while(condition){
+   // body of the loop
+}
+1. condition can be any boolean expression.
+2. When condition becomes false, control is passed to next line immediately following the loop.
+3. This loop will not be executed even one time when condition is not satisfied in once.
+
+do-while loop
+Syntax:
+do{
+    // body of the loop
+}while(condition);
+
+In this type of loop, body of a loop will be executed at least once, even if the conditional expression is false.
+
+for loop
+Syntax:
+for(initialization; conditional; iteration){
+    // body of the loop
+    // for multiple lines of code
+}
+
+for(initialization; conditional; iteration)
+    // statement to be executed
+
+For Each loop
+Syntax:
+for(type itr-var : collection){
+    //statement-block
+}
+This loop is designed to cycle through collection of objects, such as arrays in strictly sequential fashion from start to finish.
+
+Note: The iteration variable in for each loop is read-only as it relates to the underlying collection.
