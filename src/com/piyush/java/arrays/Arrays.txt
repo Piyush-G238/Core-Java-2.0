@@ -1,0 +1,36 @@
+Arrays :
+An array is a group of variables of similar data types are referred to by a common name.
+A specific element in an array is accessed through its index.
+
+One-dimensional arrays:
+syntax for declaring one-dimensional array:
+
+data_type[] ref-var;
+
+For e.g : array of month_days(int)
+int month_days[];
+
+Initializing an array:
+ref-var = new data_type[size];
+
+E.g:
+int month_days[];
+month_days = new int[30];
+
+Array initializing and declaring in one stmt:
+E.g:
+int[] month_days = new int[12];
+
+Multidimensional arrays:
+In java, multidimensional arrays are implemented as arrays of arrays.
+
+E.g:
+int twoDimensionArr[][] = new int[4][5];
+This will allocate an array of size 4x5, to the variable twoDimensionArr.
+Internally, this matrix is implemented as 'array of arrays' of 'int'.
+
+Note:
+while allocating memory for multidimensional array, you need to specify leftmost dimension.
+
+int twoD[][] = new int[4][]; (this is a valid syntax)
+
