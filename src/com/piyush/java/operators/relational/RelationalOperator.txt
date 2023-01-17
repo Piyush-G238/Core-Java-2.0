@@ -1,0 +1,36 @@
+Relational Operators:
+
+Relational operators determine relationship that one operand has to the other.
+The result of relational operator is always in boolean.
+
+1. == equals to
+2. != not equals to
+3. >= greater than equal to
+4. <= less than equal to
+5. > greater than
+6. < less than
+
+Logical Operators:
+These operators will work only on boolean operands, all binary logical operators combine two boolean values to form resultant boolean value:
+
+1. & logical AND
+2. | logical OR
+3. ^ logical XOR
+4. && short-circuit AND (standard practice to use)
+5. || short-circuit OR (standard practice to use)
+6. ! logical NOT
+7. ?: Ternary if-then-else
+
+A       B       A|B         A&B         A^B         !A
+false   false   false       false       false       true
+false   true    true        false       true        true
+true    false   true        false       true        false
+true    true    true        true        false       false
+
+The ternary operator(?)
+
+Syntax:
+
+expression1 ? expression2 : expression3;
+
+if expression1 is true, then expression2 is evaluated otherwise expression3 is evaluated.
