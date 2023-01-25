@@ -1,0 +1,24 @@
+Jumping statements
+
+These statements transfer control to another part of your program.
+Jump statements involved with java:
+1. break
+2. continue
+3. return
+
+Break statement:
+Break statement has three use cases
+1. It is used to terminate loops in between (exit from loop)
+2. Use in switch statement.
+3. Civilized form of "goto" statement.
+
+Using break as form of goto:
+Syntax:
+break label;
+label is the name of a label that identifies a block of code. To name a block put a "label : " at the start of it.
+
+Continue statement:
+A continue statement causes control to be transferred directly to conditional expression that controls the loop.
+
+Return statement:
+return statement is used to explicitly return from a method. It causes program control to go back to the caller of method.
