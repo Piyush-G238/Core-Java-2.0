@@ -1,0 +1,10 @@
+Introducing methods:
+general form of method:
+
+type "methodName"(parameter-list){
+    //body of method
+}
+
+1. type specifies return type of the method, if method doesn't return any type, then return type must be mentioned as "void".
+2. parameters are essentially variables, that receives value of arguments passed to the method when it is called.
+3. If a method is having a return type, then return statement must be there.

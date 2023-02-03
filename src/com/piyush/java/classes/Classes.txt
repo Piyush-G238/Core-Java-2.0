@@ -1,0 +1,43 @@
+Introducing classes:
+A class is a "logical construct" which defines shape and nature of objects.
+A class defines a new data type. Once defined, this new type can be used to create objects.
+A class is "a template" for objects, and an object is "an instance" of a class.
+
+General form of class:
+class "className" {
+    type instanceVar1;
+    type instanceVar2;
+    ...
+    type methodName1(parameter-list){
+        //body of method
+    }
+}
+1. The data, or variables, defined within a class are called "instance variables".
+2. Collectively, methods and variables are called "members" of class.
+3. Variables defined within class are called instance variables, because each instance of class carries its own copy of these variables.
+4. So, the data of one object is separate and unique.
+
+To create an object of any class, we use this statement as follows:
+"className" "objectName" = new "className"(args);
+
+here, args can be any numbers of arguments to be passed.
+To access the variables related with instances, we use dot operator(.)
+this operator links name of object with the name of instance variable.
+E.g. myBox is an object of type Box and width of myBox is set to 200
+
+Box myBox = new Box();
+myBox.width = 200
+
+Declaring objects:
+Obtaining of objects of a class is a two-step process.
+1. declaring type of object. It is simply a variable that can refer to an object.
+2. acquire actual physical copy of object using "new" operator. The "new" operator dynamically allocates memory for an object, and return a reference to it.
+This reference is actually, the address in memory of the object allocated by "new".
+
+E.g.
+Box myBox;
+myBox = new Box();
+
+Note:
+It is important to know that "new" operator dynamically allocates memory to objects.
+This approach provides an advantage that we can create as many or few objects as it needs during execution of your program.
