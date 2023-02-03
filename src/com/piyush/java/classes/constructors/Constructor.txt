@@ -1,0 +1,17 @@
+Constructors:
+A constructor initializes object immediately upon creation.It has same name as the class name
+Constructor don't have any return type, not even void. This is because the implicit
+return type of class’ constructor is the class type itself.
+
+Parameterized Constructor:
+Adding parameters to the constructor.
+
+E.g: Box myBox = new Box(10,20,30);
+
+"this" keyword
+"this" can be used inside any method to refer any variable to the current object.
+"this" is always a reference to the object on which method was invoked.
+
+Garbage Collection:
+Garbage collection is technique used by java to handle de-allocation of memory automatically.
+when no reference to an object exist, object is assumed to be no longer needed, and memory occupied by the object can be reclaimed.
