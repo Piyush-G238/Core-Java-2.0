@@ -1,0 +1,90 @@
+Multithreading Programming:
+A multithreaded program contains two or more parts that can run "concurrently" means happening or existing or done at same time.
+Each part in this program is called a thread. Each thread defines its separate path of execution.
+We can also conclude that multithreading is specialized form of multitasking.
+
+There are two types of multitasking:
+1. Process based multitasking
+A process is a program that is executing. Process based multitasking allows you to run two or more process concurrently.
+For e.g: running notepad and web browser at the same time.
+Process is a heavyweight task which requires their own address space. Context switching btw processes is also costly.
+
+2. Thread based multitasking
+In this multitasking, thread is the smallest unit. It means that within a program we can run more than one segment concurrently.
+E.g: In IDE, you are typing the code and error checking of the code is happening at the same time.
+Threads are the lightweight. They share the same address space and cooperatively share the same heavyweight process.
+Inter thread communication is inexpensive, and context switching from one thread to the next is lower in cost.
+
+Java thread model:
+
+When a thread blocks in a java program, only single thread that is blocked paused and other thread continue to run.
+
+Threads exist in several state:
+1. A thread can be in running state.
+2. It can be ready to run as soon as it get cpu time.
+3. It can be in suspended, where activity of the thread is temporarily halt.
+4. After the suspend state, thread goes to resuming state to pick up where it left off.
+5. A thread can be blocked when waiting for a resource.
+6. Once thread is terminated, execution of thread is halted and thread cannot be in resumed state.
+
+Priorities in thread:
+1. A priority is an integer values that specify the relativity of thread1's importance with respect to thread2's importance.
+2. A priority is used to decide when to switch from one running thread to the next. This process is called context switching.
+
+Synchronization:
+As we know, multithreading have asynchronous behaviour to run program, but we want to enforce synchronization when required.
+Java implements an elegant twist on an age-old model of interprocess synchronization: the monitor.
+In Java, there is no class “Monitor”; instead, each object has its own implicit monitor that is automatically entered when one of the object’s synchronized
+methods is called.
+
+Thread class and runnable interface
+Java’s multithreading system is built upon the "Thread" class, its methods, and
+its companion interface, "Runnable".
+
+Main thread:
+When a Java program starts up, one thread begins running immediately. This is usually called the main thread of your program, because it is the one that is
+executed when your program begins.
+
+Creating a thread:
+you can create thread by instantiating an object of type Thread. You can accomplish it by two ways:
+1. extending Thread class
+2. implementing runnable interface
+
+Using isAlive() and join()
+
+isAlive() is used to determine whether a thread has finished its execution or not.
+isAlive() returns true, if thread upon which it is called is still running.
+join() method waits until the thread on which it is called terminated.
+join(millis) allows you to specify maximum amount of time that you want to wait for specified thread to terminate.
+
+Thread priorities:
+Thread priorities are used by the thread scheduler to decide when each thread
+should be allowed to run.
+To set the thread's priorities we use setPriority(int level), which is a member of Thread class.
+Priority must be within the range of MIN_PRIORITY(1) to MAX_PRIORITY(10), to return a thread with default priority, we use NORM_PRIORITY.
+
+Synchronization:
+When two or more threads are running, and they are accessing same shared resource. We want to ensure that resource will be accessed by one thread at the time.
+This is known as synchronization.
+
+Concept behind the synchronization is "monitor". A monitor is an object that is used as a mutually exclusive lock. Only one thread can own a monitor at a given time.
+When one thread owns the monitor, all the other threads are suspended until first thread exits the monitor.
+
+Using synchronized keyword
+To enter an object's monitor , call the method that has been modified with "synchronized" keyword.
+
+Inter thread communication
+While using synchronized method, other threads were unconditionally blocked.
+To achieve synchronization in more controlled manner, we can implement interThread communication.
+there are three methods in java
+1. final void wait() : tells the calling thread to go to sleep until some other thread enters the monitor and calls notify()
+2. final void notify() : wakes up the thread that called the wait()
+3. final void notifyAll() : wakes up all the thread that called wait() on same object, at the time only one thread will get the access.
+
+Deadlock condition:
+This condition occurs when two thread have circular dependency on a pair of synchronized objects.
+
+let us consider an e.g:
+process "A" request for resource "R2", which is allocated to process "B".
+process "B" request for resource "R1", which is allocated to process "A".
+
