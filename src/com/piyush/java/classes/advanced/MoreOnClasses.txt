@@ -1,0 +1,36 @@
+Overloading methods:
+When two or more methods have same name, different parameters within the same class.
+It is one of the way to achieve polymorphism. Overloaded methods must differ in their parameter number/type.
+
+Constructor overloading:
+Like method overloading, we can also achieve constructor overloading. In constructor overloading, parameter list should be different, and
+if parameter numbers are same then parameter type should be different.
+
+A look at argument passing:
+There are two ways to pass arguments to the method call:
+1. call by value
+2. call by reference
+
+Call by value
+This approach copies value of an argument into formal parameters of method. Therefore, changes made to parameter will not affect argument.
+when you pass a primitive value to argument, it is passed by value. Any changes in the parameter will not change actual argument.
+
+Call by reference
+In this approach, a reference is passed in the method call. It means that any change made to parameter will also affect the argument.
+When you pass an object to method call, parameter will receive same reference of the argument.
+Changes to the object inside method do affect object used as an argument.
+
+Introducing access control
+How a member can be accessed is determined by access modifier.
+In java there are four main access modifiers:
+1. public : member of the class can be accessed by any other code
+2. protected
+3. private : members can only be accessed by the other members of same class.
+4. default : If there is no access modifier on members of class, then it is default access modifier. It is not accessed outside it's package.
+
+Understanding static:
+When we want the member of class to be accessed by itself, without reference to specific instance, we declare such member with static.
+
+Understanding Final:
+final keyword prevents fields from being modified after initializing it for first time, means making it constant.
+Apart from fields, methods can use final keyword preventing from method overriding.
